@@ -1,12 +1,11 @@
 ---
 const today = new Date();
+const year = today.getFullYear();
+const month = String(today.getMonth() + 1).padStart(2, '0'); // pad single digits with 0
 ---
 
 <footer class="footer footer-center block mb-5 pt-10">
   <div class="pb-2">
-    &copy; {today.getFullYear()} Zhen Xu
-  </div>
-  <div class="inline opacity-75">
+    Last updated: {year}.{month} &copy; Zhen Xu
   </div>
 </footer>
-<style></style>
