@@ -1,12 +1,10 @@
-
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
-// IMPORTANT: Update the `site` and `base` settings
 export default defineConfig({
-  site: 'https://zhenxu-0.github.io/zhenxu.github.io',
-  base: '/zhenxu.github.io/',
+  site: 'https://zhen-xu.com',   // 👈 custom domain
+  base: '/',                     // 👈 root (or just omit this line entirely)
   integrations: [mdx(), sitemap(), tailwind()]
 });
